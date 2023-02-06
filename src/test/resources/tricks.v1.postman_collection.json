@@ -1,0 +1,787 @@
+{
+	"info": {
+		"_postman_id": "8222d680-89cc-42a6-8b9f-ad4dfb6587d6",
+		"name": "MySk8Life",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tricks",
+			"item": [
+				{
+					"name": "GET all tricks",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}",
+							"host": [
+								"{{tricks-rest-service}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET grouped tricks difficulty",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/group/difficulty",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"group",
+								"difficulty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET grouped tricks category",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/group/CATEGORY",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"group",
+								"CATEGORY"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET grouped tricks invalid",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/group/invalid",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"group",
+								"invalid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET grouped tricks blank",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/group/ ",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"group",
+								" "
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET stances",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/stances",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"stances"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET tricks stance regular",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/stance/regular",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"stance",
+								"regular"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET tricks stance nollie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/stance/nollie",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"stance",
+								"nollie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET tricks stance switch",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/stance/switch",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"stance",
+								"switch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET tricks stance fakie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/stance/fakie",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"stance",
+								"fakie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET tricks stance invalid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/stance/invalid",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"stance",
+								"invalid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET tricks stance blank",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/stance/ ",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"stance",
+								" "
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/categories",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET category riding",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/riding",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"riding"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET category prebasic",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/prebasic",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"prebasic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories basic",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/basic",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"basic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories combos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/COMBOS",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"COMBOS"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories pro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/pro",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"pro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories skategod",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/skategod",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"skategod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories ledges",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/LEDGES",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"LEDGES"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories rails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/RAILS",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"RAILS"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories manuals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/manuals",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"manuals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories freestyle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/freestyle",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"freestyle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories miniramp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/miniramp",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"miniramp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories vertramp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/vertramp",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"vertramp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories invalid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/invalid",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								"invalid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET categories blank",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/category/ ",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"category",
+								" "
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulties",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulty one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulty/one",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulty",
+								"one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulty two",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulty/two",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulty",
+								"two"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulty three",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulty/three",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulty",
+								"three"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulty four",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulty/four",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulty",
+								"four"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulty five",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulty/five",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulty",
+								"five"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulty six",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulty/six",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulty",
+								"six"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulty seven",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulty/seven",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulty",
+								"seven"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulty eight",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulty/eight",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulty",
+								"eight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulty invalid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulty/invalid",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulty",
+								"invalid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET difficulty blank",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tricks-rest-service}}/difficulty/ ",
+							"host": [
+								"{{tricks-rest-service}}"
+							],
+							"path": [
+								"difficulty",
+								" "
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					"",
+					"pm.test(\"Response time is less than 200ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(200);",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "env",
+			"value": "localhost"
+		},
+		{
+			"key": "port",
+			"value": "8080"
+		},
+		{
+			"key": "context-path",
+			"value": "api"
+		},
+		{
+			"key": "version",
+			"value": "v1"
+		},
+		{
+			"key": "http/s",
+			"value": "http"
+		},
+		{
+			"key": "tricks-rest-service",
+			"value": "{{http/s}}://{{env}}:{{port}}/{{context-path}}/{{version}}/tricks"
+		}
+	]
+}
